@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #760c00;
+}
+
+button{
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+.btn{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+    border-radius: 4px;
+    
+    padding: 2px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+#piezas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+#puzzle {
+    border: 1px solid black;
+    width: 411px;
+    height: 495px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.pieza {
+    width: 137px;
+    height: 165px;
+    background-size: cover;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.placeholder {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    width: 137px;
+    height: 165px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: #ffe16b ;
+}
+
+.placeholder .pieza {
+    margin: 0;
+}
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+}
+
+.ganaste {
+    background-color: #B3D67C;
+}
+
+.ganaste #mensaje {
+    display: block;
+    margin: 5px;
+    
+}
+
+.ganaste .placeholder {
+    outline: none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
